@@ -1,3 +1,3 @@
-source $HOME/.config/general/general.vim
-source $HOME/.config/keyMaps/keyMaps.vim
-source $HOME/.config/plug-vim/Plug.vim
+source $HOME/.config/nvim/keyMaps/keyMaps.vim
+source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/general/general.vim
