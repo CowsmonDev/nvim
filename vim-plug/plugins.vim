@@ -14,9 +14,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" File Explorer
 	Plug 'scrooloose/NERDTree'
 
+  " file
+  Plug 'preservim/nerdtree'
+
     	" Auto pairs for '(' '[' '{'
 	Plug 'jiangmiao/auto-pairs'
 
 	Plug 'morhetz/gruvbox'
+
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
