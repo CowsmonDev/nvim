@@ -1,5 +1,5 @@
 "Leader KeyMaps ;
-let mapleader = ";"
+let mapleader =   ";"
 
 inoremap qq <Esc>
 inoremap QQ <Esc>
@@ -29,8 +29,6 @@ nnoremap <leader><Space> i<Space><ESC>
 
 "Leader KeyMaps ;
 let mapleader = "\<Space>"
-
-nnoremap <leader>s :vsplit<CR>
 
 nnoremap <leader>s :vsplit<CR>
 nnoremap <leader>l <c-w>l

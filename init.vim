@@ -1,20 +1,18 @@
 let g:config_separator = '\'
-let g:config_path = 'C:\Users\agust\Documents\Proyectos\Github_Proyects\nvim\'
-let config_path_keys = g:config_path . 'keyMaps' . g:config_separator
+let config_path = 'C:\Users\agust\Documents\Proyectos\Github_Proyects\nvim\'
+let config_path_keys = config_path . 'keyMaps' . g:config_separator
+let config_path_general = config_path . 'general' . g:config_separator
 "source g:config_path . 'keyMaps\keyMaps.vim'
 
-exec 'source ' . g:config_path . 'general.vim'
 exec 'source ' . config_path_keys . 'keyMaps.vim'
 
 if(has('ide'))
-
-    set number relativenumber
-    set NERDTree
-    set idearefactormode=keep
+    exec 'source ' . config_path_general . 'general_idea.vim'
     exec 'source ' . config_path_keys . 'ideaKeysMaps.vim'
 else
+    exec 'source ' . config_path . 'general.vim'
     exec 'source ' . config_path_keys . 'vimKeysMaps.vim'
-    exec 'source ' . g:config_path . 'vim-plug\plugins.vim'
+    exec 'source ' . config_path . 'vim-plug\plugins.vim'
 endif
 
 let g:python3_host_prog = expand("<path to python with pynvim installed>")
